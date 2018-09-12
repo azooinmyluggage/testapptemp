@@ -9,11 +9,11 @@ steps:
 #  displayName: 'docker build'
 - task: Docker@1
   inputs:
-    azureSubscriptionEndpoint: 'RMPM (afc11291-9826-46be-b852-70349146ddf8)'
+    azureSubscriptionEndpoint: 'RMPM'
     azureContainerRegistry: smarthotel.azurecr.io 
   
 - task: Docker@1
   inputs:
-    azureSubscriptionEndpoint: 'RMPM (afc11291-9826-46be-b852-70349146ddf8)'
+    azureSubscriptionEndpoint: 'RMPM'
     azureContainerRegistry: smarthotel.azurecr.io 
     command: 'Push an image'
