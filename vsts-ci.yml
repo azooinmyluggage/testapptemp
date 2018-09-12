@@ -12,13 +12,13 @@ steps:
 #  displayName: 'docker build'
 - task: Docker@1
   inputs:
-    azureSubscriptionEndpoint: RMPM
-    azureContainerRegistry: smarthotel.azurecr.io
+    azureSubscriptionEndpoint: 'RMPM (afc11291-9826-46be-b852-70349146ddf8)'
+    azureContainerRegistry: smarthotel.azurecr.io 
     dockerFile: SmartHotel360.PublicWeb/Dockerfile
     useDefaultContext: false
     buildContext: SmartHotel360.PublicWeb
 - task: Docker@1
   inputs:
-    azureSubscriptionEndpoint: RMPM
-    azureContainerRegistry: smarthotel.azurecr.io
+    azureSubscriptionEndpoint: 'RMPM (afc11291-9826-46be-b852-70349146ddf8)'
+    azureContainerRegistry: smarthotel.azurecr.io 
     command: 'Push an image'
